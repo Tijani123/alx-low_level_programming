@@ -3,23 +3,27 @@
 /**
  * print_square - Prints a squareushing the character #.
  * @size: The size of the square.
+ *
+ *
+ * Return: a square
  */
 void print_square(int size)
 {
-	int hgt, wid;
+	int a, b;
 
 	if (size > 0)
 	{
-		for (hgt = 0; hgt  size; hgt++)
+		for (a = 0 ; a < size ; a++)
 		{
-			for (wid = 0; wid < size; wid++)
-				_putchar('#');
-
-			if (hgt == size - 1)
-				continue;
+			for (b =0 ; b < size ; b++)
+			{
+				_putchar(35);
+			}
 			_putchar('\n');
 		}
 	}
-
-	_putchar('\n');
+	else
+	{
+		_putchar('\n');
+	}
 }
